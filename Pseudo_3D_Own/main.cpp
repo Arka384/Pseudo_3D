@@ -10,6 +10,8 @@ std::vector<sf::RectangleShape> grass;
 std::vector<sf::RectangleShape> road;
 std::vector<sf::RectangleShape> borderLeft;
 std::vector<sf::RectangleShape> borderRight;
+//vector for track segments
+std::vector<std::pair<float, float>> TrackVector;	//curvature, length
 
 void init(void);
 void update(sf::Color grassCol, sf::Color borderCol, float middle, float roadSize, float roadBorderLeft, float roadBorderRight, float roadBorderSize, int i);
@@ -21,7 +23,10 @@ int main()
 	sf::RenderWindow window(sf::VideoMode(WindowSize.x, WindowSize.y), "Test", sf::Style::Close);
 	window.setVerticalSyncEnabled(true);
 	float dt = 0.f;
-	float distance = 0.f;
+	float distance = 0.f, speed = 0.f;
+	float segmentDistance = 0.f;
+	int segmentIndex = 0;
+	float CurrentCurvature = 0.f, CurvatureDiff = 0.f, TrackCurvature = 0.f;
 
 	init();
 
@@ -36,19 +41,37 @@ int main()
 			{
 			case sf::Event::Closed:
 				window.close();
-			case sf::Event::KeyPressed:
-				if (e.key.code == sf::Keyboard::W)
-					distance += 100.f*dt;
 			default:
 				break;
 			}
 		}
 
+		//////////////////////////
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))	speed += 2 * dt;
+		else	speed -= 1 * dt;
+		//clamping of speed
+		if (speed > 1)speed = 1;
+		if (speed < 0)speed = 0;
+		distance += speed * 100 * dt;
+
+		//Curvature handling
+		segmentDistance = 0.f;
+		segmentIndex = 0;
+		for (auto k = TrackVector.begin(); k != TrackVector.end(); k++) {
+			if (distance >= segmentDistance) {
+				segmentDistance += TrackVector[segmentIndex].second;
+				segmentIndex++;
+			}
+		}
+		TrackCurvature = TrackVector[segmentIndex - 1].first;
+		CurvatureDiff = (TrackCurvature - CurrentCurvature)*dt*speed;
+		CurrentCurvature += CurvatureDiff;
+
 
 		for (int i = 0; i < nSize; i++) {
 
 			float perspective = (float)i / (float)(nSize / 2);
-			float middle = 0.5;
+			float middle = 0.5 + CurrentCurvature * pow((1.f - perspective), 3); //will be changed according to curvature and perspective
 			float roadSize = 0.2 + perspective * 0.9;
 			float roadBorderSize = roadSize * 0.15;
 			roadSize = roadSize / 2;	//already made it half
@@ -81,6 +104,7 @@ int main()
 
 void update(sf::Color grassCol, sf::Color borderCol, float middle, float roadSize, float roadBorderLeft, float roadBorderRight, float roadBorderSize, int i)
 {
+	//all my clumsy update things 
 	int y = (WindowSize.y / 2) + (i * cellHeight);
 	//grass
 	grass[i].setPosition(0, y);
@@ -101,7 +125,6 @@ void update(sf::Color grassCol, sf::Color borderCol, float middle, float roadSiz
 }
 
 
-
 void init()
 {
 	sf::RectangleShape temp;
@@ -114,4 +137,15 @@ void init()
 	temp.setSize(sf::Vector2f(WindowSize.x, cellHeight));
 	for (int i = 0; i < nSize; i++)
 		grass.push_back(temp);
+
+	//Track segemnts
+	TrackVector.push_back(std::make_pair(0.f, 100.f));
+	TrackVector.push_back(std::make_pair(-1.f, 100.f));
+	TrackVector.push_back(std::make_pair(0.f, 100.f));
+	TrackVector.push_back(std::make_pair(1.f, 100.f));
+	TrackVector.push_back(std::make_pair(0.f, 100.f));
+	TrackVector.push_back(std::make_pair(-0.2, 100.f));
+	TrackVector.push_back(std::make_pair(0.f, 50.f));
+	TrackVector.push_back(std::make_pair(0.2, 100.f));
+	TrackVector.push_back(std::make_pair(0.f, 100.f));
 }
