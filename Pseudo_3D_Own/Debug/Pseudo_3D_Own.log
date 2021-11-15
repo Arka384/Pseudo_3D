@@ -1,40 +1,42 @@
 ﻿  main.cpp
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(71): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(75): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(102): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(109): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(110): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(111): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(114): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(115): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(120): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(80): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(86): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(90): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(123): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(132): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(137): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(138): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(139): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(142): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(143): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(148): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(151): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(153): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(181): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(184): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(186): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(154): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(156): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(158): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(187): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(189): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(191): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(159): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(161): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(192): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(194): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(162): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(175): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(195): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(208): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(175): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(208): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=int
@@ -43,6 +45,14 @@ c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\ps
           [
               T=float
           ]
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(214): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(217): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(219): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(222): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(224): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(230): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(231): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(233): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\utility(239): warning C4244: 'initializing': conversion from '_Ty' to '_Ty1', possible loss of data
           with
           [
@@ -52,6 +62,6 @@ c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.1
           [
               _Ty1=float
           ]
-  c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(191): note: see reference to function template instantiation 'std::pair<float,float>::pair<double,float,0>(std::pair<double,float> &&) noexcept' being compiled
-  c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(191): note: see reference to function template instantiation 'std::pair<float,float>::pair<double,float,0>(std::pair<double,float> &&) noexcept' being compiled
+  c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(248): note: see reference to function template instantiation 'std::pair<float,float>::pair<double,float,0>(std::pair<double,float> &&) noexcept' being compiled
+  c:\users\arkad\documents\deadshot files\c++ programs\sfml\tests\pseudo_3d_own\pseudo_3d_own\main.cpp(248): note: see reference to function template instantiation 'std::pair<float,float>::pair<double,float,0>(std::pair<double,float> &&) noexcept' being compiled
   Pseudo_3D_Own.vcxproj -> C:\Users\arkad\Documents\DEADSHOT FILES\C++ Programs\SFML\TESTS\Pseudo_3D_Own\Debug\Pseudo_3D_Own.exe
